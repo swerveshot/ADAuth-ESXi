@@ -1,0 +1,11 @@
+{
+    "template_name"       : "ADAuth-DC01",
+    "template_sourcedir"  : "{{env `USERPROFILE`}}/Downloads",
+    "template_outputdir"  : "{{env `USERPROFILE`}}/Documents/Virtual Machines/{{user `template_name`}}",
+    "os_hostname"         : "somehost",
+    "os_username"         : "foo",
+    "os_password"         : "bar",
+    "vsphere_hostname"    : "somehost",
+    "vsphere_username"    : "foo",
+    "vsphere_password"    : "bar"
+}
