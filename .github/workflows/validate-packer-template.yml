@@ -27,4 +27,4 @@ jobs:
       uses: docker://hashicorp/packer:light
       with:
         # This is working in a self-hosted container
-        args: "validate -var 'os_username=foo' /github/workspace/${{ matrix.template }}"
+        args: "validate -var os_username=foo /github/workspace/${{ matrix.template }}"
