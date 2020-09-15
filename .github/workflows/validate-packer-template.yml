@@ -13,7 +13,8 @@ jobs:
   validate:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    env: PACKER_LOG: 1
+    env:
+      PACKER_LOG: 1
     strategy:
       matrix:
         template: ["ADAuth-DC01.json"]
