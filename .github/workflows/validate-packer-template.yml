@@ -24,4 +24,4 @@ jobs:
       # pull official hashicorp packer container for docker hub
       uses: docker://hashicorp/packer:light
       with:
-        args: "validate -var 'template_sourcedir=foo' -var 'os_username=administrator' /github/workspace/${{ matrix.template }}"
+        args: "validate -var 'os_username=foo' /github/workspace/${{ matrix.template }}"
