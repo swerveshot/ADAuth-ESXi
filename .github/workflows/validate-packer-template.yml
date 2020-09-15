@@ -30,5 +30,6 @@ jobs:
       # pull official hashicorp packer container for docker hub
       uses: docker://hashicorp/packer:light
       with:
-        # This is working in a self-hosted container
+        # For some reason user variables passed as argument work fine enclosed in single quotes when using a self-hosted container
+        # On a GitHub shared container the workflow only completes succesfully when the quotes are removed
         args: "validate -var os_username=foo /github/workspace/${{ matrix.template }}"
