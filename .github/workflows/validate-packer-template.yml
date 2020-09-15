@@ -3,9 +3,13 @@ name: Validate Packer Template
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-# blah
 on: 
-  push
+  push:
+    # Only run workflow when JSON or YAML files are changed
+    paths:
+      - '**.json'
+      - '**.yml'
+      - '**.yaml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
