@@ -1,5 +1,7 @@
 # vSphere AD Authentication lab
 
+![Validate Packer Template](https://github.com/swerveshot/ADAuth-ESXi/workflows/Validate%20Packer%20Template/badge.svg?branch=swerveshot-actions-1)
+
 ### Introduction
 This is a project to create a virtual lab for testing vSphere AD Authentication for ESXi server.
 
