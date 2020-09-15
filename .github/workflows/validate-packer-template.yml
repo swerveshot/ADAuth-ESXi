@@ -25,5 +25,6 @@ jobs:
     - name: Run Packer Container - Validate Template ${{ matrix.template }}
       # pull official hashicorp packer container for docker hub
       uses: docker://hashicorp/packer:light
-      with:  
-        args: "validate --var 'os_username=foo' /github/workspace/${{ matrix.template }}"
+      with:
+        # This is working in a self-hosted container
+        args: "validate -var 'os_username=foo' /github/workspace/${{ matrix.template }}"
